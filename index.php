@@ -9,11 +9,22 @@
  </head>
  <body>
     
-      <h1><?php  if(!empty($_GET['passwordLenght'])){echo $_GET['passwordLenght'];}else{echo "insert lenght";}?></h1>
+      <h1 class='ms-5'><?php  if(!empty($_GET['passwordLength'])){echo generate_pw($_GET['passwordLength']);}else{echo "insert length";}?></h1>
     <form action="./index.php" method="get" class="m-4">
-        <input type="number" id="password" name="passwordLenght" placeholder="password">
+        <input type="number" id="password" name="passwordLength" placeholder="password">
         <input type="submit">
     </form>
+
+ <?php
+ function generate_pw($passwordLenght) {
+  $length=$passwordLenght;
+  $pw = '';
+  for($i = 0; $i < $length; $i++) {
+    $pw .= chr(rand(0, 126));
+  }
+  return $pw;
+}
+?>
 
 
 
