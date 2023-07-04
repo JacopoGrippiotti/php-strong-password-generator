@@ -1,0 +1,11 @@
+.password-container{
+    background-color:rgb(7, 22, 48) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    color: rgb(128, 137, 149);
+}
