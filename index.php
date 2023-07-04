@@ -8,8 +8,9 @@
     <title>Document</title>
  </head>
  <body>
-    
-
+    <form action="./index.php" method="get" class="m-4">
+        <input type="text" id="password" name="password" placeholder="password">
+    </form>
 
 
 
