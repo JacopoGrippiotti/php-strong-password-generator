@@ -8,8 +8,11 @@
     <title>Document</title>
  </head>
  <body>
+    
+      <h1><?php  if(!empty($_GET['passwordLenght'])){echo $_GET['passwordLenght'];}else{echo "insert lenght";}?></h1>
     <form action="./index.php" method="get" class="m-4">
-        <input type="text" id="password" name="password" placeholder="password">
+        <input type="number" id="password" name="passwordLenght" placeholder="password">
+        <input type="submit">
     </form>
 
 
